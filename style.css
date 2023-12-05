@@ -1,0 +1,43 @@
+.hello {
+    background-color: rgb(205, 222, 236);
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.background {
+    background-color: rgb(217, 222, 226);
+    cursor: cell;
+}
+.text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+.button {
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: rgb(140, 250, 213);
+    border-radius: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 10px 30px;
+    transition: all 0.5s;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.button:hover {
+    background: linear-gradient(to right, rgb(140, 250, 213), rgb(0, 247, 255));
+    transform: translateY(-10px);
+    padding: 15px 70px;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
