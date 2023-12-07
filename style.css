@@ -1,17 +1,18 @@
+html {
+    cursor: cell;
+}
 .hello {
     background-color: rgb(205, 222, 236);
     text-align: center;
     font-size: 23px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.background {
-    background-color: rgb(217, 222, 226);
-    cursor: cell;
+    pointer-events: none;
 }
 .text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: 20px;
+    pointer-events: none;
 }
 .button {
     text-align: center;
@@ -33,6 +34,7 @@
 }
 .button:hover {
     background: linear-gradient(to right, rgb(140, 250, 213), rgb(0, 247, 255), rgb(1, 88, 201));
+    color: rgba(78, 116, 103, 1);
     transform: translateY(-10px);
     padding: 15px 70px;
     border-radius: 50px;
@@ -41,4 +43,16 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+.discription {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    left: 110%;
+    bottom: 25%;
+    transition: all 0.5s;
+    color: rgba(78, 116, 103, 1);
+    pointer-events: none;
+    font-size: 10px;
+    transition: all 0.5;
 }
