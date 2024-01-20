@@ -1,58 +1,173 @@
-.hello {
-    background-color: rgb(205, 222, 236);
+.header {
+    background-color: rgb(203, 243, 230);
+    padding: 10px;
     text-align: center;
-    font-size: 23px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    pointer-events: none;
-}
-.text {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 20px;
+    font-family: Lemon;
+    font-size: 22px;
+    text-shadow: 0 0 3px #ab6b6b, 0 0 5px #353543;
     pointer-events: none;
 }
 body {
-    cursor: cell;
+    background-color: antiquewhite;
+    text-shadow: 0 0 3px #ab6b6b, 0 0 5px #353543;
 }
-.button {
-    text-align: center;
-    margin: 10px;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    border: none;
-    background: rgb(140, 250, 213);
-    border-radius: 17px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    padding: 10px 30px;
-    transition: all 0.5s;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-.button:hover {
-    background: linear-gradient(to right, rgb(140, 250, 213), rgb(0, 247, 255), rgb(1, 88, 201));
-    color: rgba(78, 116, 103, 1);
-    transform: translateY(-10px);
-    padding: 15px 70px;
-    border-radius: 50px;
+.head {
+    font-family: Lemon;
     font-size: 20px;
-    top: 50%;
+    position: absolute;
+    top: 32%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+.buttom {
+    font-family: Lemon;
+    font-size: 15px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+/* This is div */
+.youtube {
+    position: absolute;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
-.discription {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 700;
+.steam {
     position: absolute;
-    left: 110%;
-    bottom: 25%;
-    transition: all 0.5s;
-    color: rgba(78, 116, 103, 1);
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.github {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.instagram {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spotify {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* This is span */
+.youtube span {
+    font-family: Lemon;
     pointer-events: none;
-    font-size: 80%;
-    transition: all 0.5;
+    color: #2b2b2b;
+}
+.steam span {
+    font-family: Lemon;
+    pointer-events: none;
+    color: #2b2b2b;
+}
+.github span {
+    font-family: Lemon;
+    pointer-events: none;
+    color: #2b2b2b;
+}
+.instagram span {
+    font-family: Lemon;
+    pointer-events: none;
+    color: #2b2b2b;
+}
+.spotify span {
+    font-family: Lemon;
+    pointer-events: none;
+    color: #2b2b2b;
+}
+
+/* This is button */
+.youtube button {
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding-bottom: 4px;
+}
+.steam button {
+    border: none;
+    background-color: rgb(41, 55, 76);
+    color: white;
+    padding-bottom: 4px;
+}
+.github button {
+    border: none;
+    background-color: rgb(55, 99, 244);
+    color: white;
+    padding-bottom: 4px;
+}
+.instagram button {
+    border: none;
+    background-color: #000000;
+    color: white;
+    padding-bottom: 4px;
+}
+.spotify button {
+    border: none;
+    background-color: #52e071;
+    color: white;
+    padding-bottom: 4px;
+}
+
+/* Youtube Text */
+.youtube span::before {
+    margin: 19px;
+    content: 'YouTube';
+}
+.youtube button:hover ~ span::before {
+    color: rgb(64, 240, 214);
+    content: 'KOMODO';
+}
+/* Steam Text */
+.steam span::before {
+    margin: 29px;
+    content: 'Steam';
+}
+.steam button:hover ~ span::before {
+    color: rgb(64, 240, 214);
+    margin: 43px;
+    content: 'Din';
+}
+/* Github text */
+.github span::before {
+    margin: 27px;
+    content: 'GitHub';
+}
+.github button:hover ~ span::before {
+    color: rgb(64, 240, 214);
+    margin: 32px;
+    content: 'Din56';
+}
+/* Instagram text */
+.instagram span::before {
+    margin: 10px;
+    content: 'Instagram';
+}
+.instagram button:hover ~ span::before {
+    color: rgb(64, 240, 214);
+    margin: 20px;
+    content: 'notdinfr';
+}
+/* Spotify text */
+.spotify span::before {
+    margin: 25px;
+    content: 'Spotify';
+}
+.spotify button:hover ~ span::before {
+    color: rgb(64, 240, 214);
+    margin: 43px;
+    content: 'Din';
 }
