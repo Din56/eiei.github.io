@@ -8,9 +8,64 @@
     pointer-events: none;
 }
 body {
-    background-color: antiquewhite;
     text-shadow: 0 0 3px #ab6b6b, 0 0 5px #353543;
-}
+    background-color: #222;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .square {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    animation: rotate 5s linear infinite;
+  }
+  
+  .square:nth-child(2) {
+    background-color: #2ecc71;
+    animation-duration: 8s;
+  }
+  
+  .square:nth-child(3) {
+    background-color: #e74c3c;
+    animation-duration: 12s;
+  }
+  
 .head {
     font-family: Lemon;
     font-size: 20px;
@@ -31,7 +86,7 @@ body {
 }
 
 
-/* This is div  */
+/* This is div */
 .youtube {
     position: absolute;
     top: 40%;
