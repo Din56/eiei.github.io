@@ -189,6 +189,8 @@ body {
     border-radius: 3px;
     background-color: #edbcff;
     transition: all 0.7s;
+    color: #000000;
+    padding-block: 0.5%;
 }
 
 #RandomButton button:hover {
