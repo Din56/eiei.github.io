@@ -1,7 +1,7 @@
 body {
     background-color: #222;
     overflow: hidden;
-  } 
+  }
   
   @keyframes gradientAnimation {
     0% {
@@ -13,7 +13,7 @@ body {
     100% {
       background-position: 0% 50%;
     }
-  } 
+  }
   
   body::before {
     content: "";
@@ -114,6 +114,62 @@ body {
     padding-block: 20%;
     padding-inline: 15%;
 }
+#Card #Card5 {
+    background-color: rgb(188, 249, 188);
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    border: 1px solid black;
+    padding-block: 20%;
+    padding-inline: 15%;
+}
+#Card #Card6 {
+    background-color: rgb(239, 239, 176);
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    border: 1px solid black;
+    padding-block: 20%;
+    padding-inline: 15%;
+}
+#Card #Card7 {
+    background-color: rgb(98, 98, 241);
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    border: 1px solid black;
+    padding-block: 20%;
+    padding-inline: 15%;
+}
+#Card #Card8 {
+    background-color: rgb(213, 53, 53);
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    border: 1px solid black;
+    padding-block: 20%;
+    padding-inline: 15%;
+}
+#Card #Card9 {
+    background-color: rgb(213, 53, 53);
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    border: 1px solid black;
+    padding-block: 20%;
+    padding-inline: 15%;
+}
+
 #Card #SecretCard {
     background-color: rgb(164, 41, 205);
     margin-top: 10%;
@@ -166,6 +222,47 @@ body {
     font-family: Ubuntu, Kanit;
     font-size: 13px;
 }
+#Rarely5 {
+    margin-top: 1.5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    font-size: 13px;
+}
+#Rarely6 {
+    margin-top: 1.5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    font-size: 13px;
+}
+#Rarely7 {
+    margin-top: 1.5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    font-size: 13px;
+}
+#Rarely8 {
+    margin-top: 1.5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    font-size: 13px;
+}
+#Rarely9 {
+    margin-top: 1.5%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    font-size: 13px;
+}
+
 #SecretRarely {
     margin-top: 1.5%;
     display: none;
