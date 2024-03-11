@@ -8,7 +8,7 @@ function Random(){
         button.style.display = "none"
         setTimeout(function() {
             button.style.display = "flex";
-        }, 2000); // 3000 milliseconds cooldown (adjust as needed)
+        }, 2000); 
     })
 
     var Card = {
