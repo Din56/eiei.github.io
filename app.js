@@ -143,7 +143,7 @@ function Random(StatCard, TotalCard){
     }
     else if (RandomVaule <= 1000){
         StatCard.StatCard9 = StatCard.StatCard9 + 1
-        document.getElementById('ShowCard9').innerHTML = 'Card 1'
+        document.getElementById('ShowCard9').innerHTML = 'Card 9'
         document.getElementById('StatCard9').innerHTML = 'x ' + StatCard.StatCard9
         Card.Card9.style.display = 'flex'
         Rarely.Rarely9.style.display = 'flex'
