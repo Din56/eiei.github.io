@@ -307,3 +307,93 @@ body {
     left: 2%;
     font-family: Ubuntu, Kanit;
 }
+
+#InventoryButton button {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background-color: #a5e4f2;
+    transition: all 0.7s;
+    color: #000000;
+    padding-block: 0.5%;
+}
+
+#InventoryButton {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    transition: all 0.7s;
+}
+
+#InventoryButton button:hover {
+    content: "<";
+    padding-inline: 10%;
+}
+#InventoryButton button:hover::before {
+    content: "> ";
+}
+#InventoryButton button:hover::after {
+    content: " <";
+}
+
+#InventoryPage {
+    display: none;
+}
+
+#InventoryTitle {
+    display: flex;
+    justify-content: center;
+    font-family: Ubuntu, Kanit;
+    font-size: 17px;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+#TotalCard {
+    display: flex;
+    justify-content: center;
+    font-family: Ubuntu, Kanit;
+    font-size: 17px;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+#CardList {
+    display: flex;
+    position: absolute;
+    left: 4%;
+    top: 10%;
+}
+
+.ShowCard {
+    display: flex;
+    padding: 10%;
+    font-family: Ubuntu, Kanit;
+    padding-inline: 15%;
+}
+.StatCard {
+    display: flex;
+    font-family: Ubuntu, Kanit;
+    padding-inline: 15%;
+}
+
+#BackToMainPage {
+    position: absolute;
+    right: 10%;
+    bottom: 3%;
+}
+
+#BackToMainPage button {
+    border: 1px solid #000000;
+    border-radius: 3px;
+    background-color: #a5e4f2;
+    transition: all 0.7s;
+    color: #000000;
+    padding-block: 3%;
+    padding-inline: 50%;
+}
+
+#BackToMainPage button:hover {
+    content: "<";
+    padding-inline: 100%;
+}
