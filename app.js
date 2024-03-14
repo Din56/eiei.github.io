@@ -97,81 +97,80 @@ function Random(StatCard, TotalCard, CoolDown){
     RandomVaule = Math.floor(Math.random() * 1001) // * 10 is 0 to 9 / * 11 is 0 to 10
     RandomVauleForZ = Math.floor(Math.random() * 10000001)
     RandomVauleForA = Math.floor(Math.random() * 3201)
-
     
     if (RandomVauleForZ == 46169){
         StatCard.StatCardZ = StatCard.StatCardZ + 1
-        document.getElementById('ShowCardZ').innerHTML = 'Card Z'
+        document.getElementById('ShowCardZ').innerHTML = 'Card Z [ 1 in 10,000,000 ]'
         document.getElementById('StatCardZ').innerHTML = 'x ' + StatCard.StatCardZ
         Card.CardZ.style.display = 'flex'
         Rarely.RarelyZ.style.display = 'flex'
     }
     else if (RandomVauleForA == 32){
         StatCard.StatCardA = StatCard.StatCardA + 1
-        document.getElementById('ShowCardA').innerHTML = 'Card A'
+        document.getElementById('ShowCardA').innerHTML = 'Card A [ 1 in 3,200 ]'
         document.getElementById('StatCardA').innerHTML = 'x ' + StatCard.StatCardA
         Card.CardA.style.display = 'flex'
         Rarely.RarelyA.style.display = 'flex'
     }
     else if (RandomVaule <= 500){
         StatCard.StatCard1 = StatCard.StatCard1 + 1
-        document.getElementById('ShowCard1').innerHTML = 'Card 1'
+        document.getElementById('ShowCard1').innerHTML = 'Card 1 [ 1 in 2 ]'
         document.getElementById('StatCard1').innerHTML = 'x ' + StatCard.StatCard1
         Card.Card1.style.display = 'flex'
         Rarely.Rarely1.style.display = 'flex'
     }
     else if (RandomVaule <= 750){
         StatCard.StatCard2 = StatCard.StatCard2 + 1
-        document.getElementById('ShowCard2').innerHTML = 'Card 2'
+        document.getElementById('ShowCard2').innerHTML = 'Card 2 [ 1 in 4 ]'
         document.getElementById('StatCard2').innerHTML = 'x ' + StatCard.StatCard2
         Card.Card2.style.display = 'flex'
         Rarely.Rarely2.style.display = 'flex'
     }
     else if (RandomVaule <= 900){
         StatCard.StatCard3 = StatCard.StatCard3 + 1
-        document.getElementById('ShowCard3').innerHTML = 'Card 3'
+        document.getElementById('ShowCard3').innerHTML = 'Card 3 [ 1 in 6.6 ]'
         document.getElementById('StatCard3').innerHTML = 'x ' + StatCard.StatCard3
         Card.Card3.style.display = 'flex'
         Rarely.Rarely3.style.display = 'flex'
     }
     else if (RandomVaule <= 960){
         StatCard.StatCard4 = StatCard.StatCard4 + 1
-        document.getElementById('ShowCard4').innerHTML = 'Card 4'
+        document.getElementById('ShowCard4').innerHTML = 'Card 4 [ 1 in 16.6 ]'
         document.getElementById('StatCard4').innerHTML = 'x ' + StatCard.StatCard4
         Card.Card4.style.display = 'flex'
         Rarely.Rarely4.style.display = 'flex'
     }
     else if (RandomVaule <= 980){
         StatCard.StatCard5 = StatCard.StatCard5 + 1
-        document.getElementById('ShowCard5').innerHTML = 'Card 5'
+        document.getElementById('ShowCard5').innerHTML = 'Card 5 [ 1 in 50 ]'
         document.getElementById('StatCard5').innerHTML = 'x ' + StatCard.StatCard5
         Card.Card5.style.display = 'flex'
         Rarely.Rarely5.style.display = 'flex'
     }
     else if (RandomVaule <= 990){
         StatCard.StatCard6 = StatCard.StatCard6 + 1
-        document.getElementById('ShowCard6').innerHTML = 'Card 6'
+        document.getElementById('ShowCard6').innerHTML = 'Card 6 [ 1 in 100 ]'
         document.getElementById('StatCard6').innerHTML = 'x ' + StatCard.StatCard6
         Card.Card6.style.display = 'flex'
         Rarely.Rarely6.style.display = 'flex'
     }
     else if (RandomVaule <= 995){
         StatCard.StatCard7 = StatCard.StatCard7 + 1
-        document.getElementById('ShowCard7').innerHTML = 'Card 7'
+        document.getElementById('ShowCard7').innerHTML = 'Card 7 [ 1 in 200 ]'
         document.getElementById('StatCard7').innerHTML = 'x ' + StatCard.StatCard7
         Card.Card7.style.display = 'flex'
         Rarely.Rarely7.style.display = 'flex'
     }
     else if (RandomVaule <= 999){
         StatCard.StatCard8 = StatCard.StatCard8 + 1
-        document.getElementById('ShowCard8').innerHTML = 'Card 8'
+        document.getElementById('ShowCard8').innerHTML = 'Card 8 [ 1 in 250 ]'
         document.getElementById('StatCard8').innerHTML = 'x ' + StatCard.StatCard8
         Card.Card8.style.display = 'flex'
         Rarely.Rarely8.style.display = 'flex'
     }
     else if (RandomVaule <= 1000){
         StatCard.StatCard9 = StatCard.StatCard9 + 1
-        document.getElementById('ShowCard9').innerHTML = 'Card 9'
+        document.getElementById('ShowCard9').innerHTML = 'Card 9 [ 1 in 1000 ]'
         document.getElementById('StatCard9').innerHTML = 'x ' + StatCard.StatCard9
         Card.Card9.style.display = 'flex'
         Rarely.Rarely9.style.display = 'flex'
