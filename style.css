@@ -62,7 +62,7 @@ body {
     pointer-events: none;
 }
 #Card #StarterCard {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     margin-top: 10%;
     display: flex;
     justify-content: center;
@@ -172,7 +172,18 @@ body {
     padding-inline: 15%;
 }
 #Card #CardZ {
-    background-color: rgba(146, 24, 239, 0.582);
+    background-image: linear-gradient(45deg, rgb(106, 0, 255), rgb(170, 0, 255), rgb(224, 178, 250));
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    border: 1px solid black;
+    padding-block: 20%;
+    padding-inline: 15%;
+}
+#Card #CardA {
+    background-color: rgba(101, 154, 247, 0.582);
     margin-top: 10%;
     display: none;
     justify-content: center;
@@ -259,7 +270,7 @@ body {
     transition: all 0.7s;
     color: #000000;
     padding-block: 0.5%;
-    cursor: help;
+    cursor: pointer;
 }
 
 #InventoryButton {
@@ -342,6 +353,7 @@ body {
     color: #000000;
     padding-block: 3%;
     padding-inline: 150%;
+    cursor: pointer;
 }
 
 #BackToMainPage button:hover {
