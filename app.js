@@ -12,19 +12,21 @@ var StatCard = {
     StatCard7 : 0,
     StatCard8 : 0,
     StatCard9 : 0,
+    StatCardZ : 0,
 }
 
 var TotalCard = {
     Total : 0
 }
 
-function Random(StatCard, TotalCard){
+function Random(StatCard, TotalCard, CoolDown){
+    
     document.getElementById("RandomButton").addEventListener("click", function() {
         var button = this;
         button.style.display = "none"
         setTimeout(function() {
             button.style.display = "flex";
-        }, 2000);
+        }, CoolDown);
     })
 
     TotalCard.Total = TotalCard.Total + 1
@@ -42,6 +44,7 @@ function Random(StatCard, TotalCard){
         Card7 : document.getElementById("Card7"),
         Card8 : document.getElementById("Card8"),
         Card9 : document.getElementById("Card9"),
+        CardZ : document.getElementById("CardZ"),
         SecretCard : document.getElementById("SecretCard"),
     }
     
@@ -56,6 +59,7 @@ function Random(StatCard, TotalCard){
         Rarely7 : document.getElementById("Rarely7"),
         Rarely8 : document.getElementById("Rarely8"),
         Rarely9 : document.getElementById("Rarely9"),
+        RarelyZ : document.getElementById("RarelyZ"),
         SecretRarely : document.getElementById("SecretRarely"),
     }
 
@@ -79,13 +83,23 @@ function Random(StatCard, TotalCard){
     Rarely.Rarely8.style.display = 'none'
     Card.Card9.style.display = 'none'
     Rarely.Rarely9.style.display = 'none'
+    Card.CardZ.style.display = 'none'
+    Rarely.RarelyZ.style.display = 'none'
 
     Card.SecretCard.style.display = 'none'
     Rarely.SecretRarely.style.display = 'none'
 
     RandomVaule = Math.floor(Math.random() * 1001) // * 10 is 0 to 9 / * 11 is 0 to 10
+    RandomVauleForZ = Math.floor(Math.random() * 10000001)
 
-    if (RandomVaule <= 500){
+    if (RandomVauleForZ == 46169){
+        StatCard.StatCardZ = StatCard.StatCardZ + 1
+        document.getElementById('ShowCardZ').innerHTML = 'Card Z'
+        document.getElementById('StatCardZ').innerHTML = 'x ' + StatCard.StatCardZ
+        Card.CardZ.style.display = 'flex'
+        Rarely.RarelyZ.style.display = 'flex'
+    }
+    else if (RandomVaule <= 500){
         StatCard.StatCard1 = StatCard.StatCard1 + 1
         document.getElementById('ShowCard1').innerHTML = 'Card 1'
         document.getElementById('StatCard1').innerHTML = 'x ' + StatCard.StatCard1
@@ -153,33 +167,35 @@ function Random(StatCard, TotalCard){
 
 function SummonSecret(){
     var Card = {
-        StarterCard : document.getElementById("StarterCard"),
-        Card1 : document.getElementById("Card1"),
-        Card2 : document.getElementById("Card2"),
-        Card3 : document.getElementById("Card3"),
-        Card4 : document.getElementById("Card4"),
-        Card5 : document.getElementById("Card5"),
-        Card6 : document.getElementById("Card6"),
-        Card7 : document.getElementById("Card7"),
-        Card8 : document.getElementById("Card8"),
-        Card9 : document.getElementById("Card9"),
-        SecretCard : document.getElementById("SecretCard"),
-    }
-    
+            StarterCard : document.getElementById("StarterCard"),
+            Card1 : document.getElementById("Card1"),
+            Card2 : document.getElementById("Card2"),
+            Card3 : document.getElementById("Card3"),
+            Card4 : document.getElementById("Card4"),
+            Card5 : document.getElementById("Card5"),
+            Card6 : document.getElementById("Card6"),
+            Card7 : document.getElementById("Card7"),
+            Card8 : document.getElementById("Card8"),
+            Card9 : document.getElementById("Card9"),
+            CardZ : document.getElementById("CardZ"),
+            SecretCard : document.getElementById("SecretCard"),
+        }
+        
     var Rarely = { 
-        StarterRarely : document.getElementById("StarterRarely"),
-        Rarely1 : document.getElementById("Rarely1"),
-        Rarely2 : document.getElementById("Rarely2"),
-        Rarely3 : document.getElementById("Rarely3"),
-        Rarely4 : document.getElementById("Rarely4"),
-        Rarely5 : document.getElementById("Rarely5"),
-        Rarely6 : document.getElementById("Rarely6"),
-        Rarely7 : document.getElementById("Rarely7"),
-        Rarely8 : document.getElementById("Rarely8"),
-        Rarely9 : document.getElementById("Rarely9"),
-        SecretRarely : document.getElementById("SecretRarely"),
-    }
-
+            StarterRarely : document.getElementById("StarterRarely"),
+            Rarely1 : document.getElementById("Rarely1"),
+            Rarely2 : document.getElementById("Rarely2"),
+            Rarely3 : document.getElementById("Rarely3"),
+            Rarely4 : document.getElementById("Rarely4"),
+            Rarely5 : document.getElementById("Rarely5"),
+            Rarely6 : document.getElementById("Rarely6"),
+            Rarely7 : document.getElementById("Rarely7"),
+            Rarely8 : document.getElementById("Rarely8"),
+            Rarely9 : document.getElementById("Rarely9"),
+            RarelyZ : document.getElementById("RarelyZ"),
+            SecretRarely : document.getElementById("SecretRarely"),
+        }
+    
     Card.StarterCard.style.display = 'none'
     Rarely.StarterRarely.style.display = 'none'
     Card.Card1.style.display = 'none'
@@ -200,6 +216,8 @@ function SummonSecret(){
     Rarely.Rarely8.style.display = 'none'
     Card.Card9.style.display = 'none'
     Rarely.Rarely9.style.display = 'none'
+    Card.CardZ.style.display = 'none'
+    Rarely.RarelyZ.style.display = 'none'
 
     Card.SecretCard.style.display = 'flex'
     Rarely.SecretRarely.style.display = 'flex'
