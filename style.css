@@ -52,15 +52,17 @@ body {
     font-size: 17px;
     background-color: beige;
     padding-block: 2%;
+    pointer-events: none;
 }
 #Card {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Ubuntu, Kanit;
+    pointer-events: none;
 }
 #Card #StarterCard {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin-top: 10%;
     display: flex;
     justify-content: center;
@@ -115,7 +117,7 @@ body {
     padding-inline: 15%;
 }
 #Card #Card5 {
-    background-color: rgb(188, 249, 188);
+    background-color: #FF8C07;
     margin-top: 10%;
     display: none;
     justify-content: center;
@@ -126,7 +128,7 @@ body {
     padding-inline: 15%;
 }
 #Card #Card6 {
-    background-color: rgb(239, 239, 176);
+    background-color: #FF9DE5;
     margin-top: 10%;
     display: none;
     justify-content: center;
@@ -137,7 +139,7 @@ body {
     padding-inline: 15%;
 }
 #Card #Card7 {
-    background-color: rgb(98, 98, 241);
+    background-color: #55D5EF;
     margin-top: 10%;
     display: none;
     justify-content: center;
@@ -148,7 +150,7 @@ body {
     padding-inline: 15%;
 }
 #Card #Card8 {
-    background-color: rgb(213, 53, 53);
+    background-color:#79FFE5;
     margin-top: 10%;
     display: none;
     justify-content: center;
@@ -159,7 +161,18 @@ body {
     padding-inline: 15%;
 }
 #Card #Card9 {
-    background-color: rgb(213, 53, 53);
+    background-color: #FFC89C;
+    margin-top: 10%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu, Kanit;
+    border: 1px solid black;
+    padding-block: 20%;
+    padding-inline: 15%;
+}
+#Card #CardZ {
+    background-color: rgba(146, 24, 239, 0.582);
     margin-top: 10%;
     display: none;
     justify-content: center;
@@ -189,87 +202,16 @@ body {
     align-items: center;
     font-family: Ubuntu, Kanit;
     font-size: 13px;
+    pointer-events: none;
 }
-#Rarely1 {
+.Rarely {
     margin-top: 1.5%;
     display: none;
     justify-content: center;
     align-items: center;
     font-family: Ubuntu, Kanit;
     font-size: 13px;
-}
-#Rarely2 {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
-}
-#Rarely3 {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
-}
-#Rarely4 {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
-}
-#Rarely5 {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
-}
-#Rarely6 {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
-}
-#Rarely7 {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
-}
-#Rarely8 {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
-}
-#Rarely9 {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
-}
-
-#SecretRarely {
-    margin-top: 1.5%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-family: Ubuntu, Kanit;
-    font-size: 13px;
+    pointer-events: none;
 }
 
 #RandomButton {
@@ -288,6 +230,7 @@ body {
     transition: all 0.7s;
     color: #000000;
     padding-block: 0.5%;
+    cursor: cell;
 }
 
 #RandomButton button:hover {
@@ -306,6 +249,7 @@ body {
     bottom: 2%;
     left: 2%;
     font-family: Ubuntu, Kanit;
+    pointer-events: none;
 }
 
 #InventoryButton button {
@@ -315,6 +259,7 @@ body {
     transition: all 0.7s;
     color: #000000;
     padding-block: 0.5%;
+    cursor: help;
 }
 
 #InventoryButton {
@@ -348,6 +293,7 @@ body {
     font-size: 17px;
     margin-top: 2%;
     margin-left: 5%;
+    pointer-events: none;
 }
 #TotalCard {
     display: flex;
@@ -356,6 +302,7 @@ body {
     font-size: 17px;
     margin-top: 2%;
     margin-left: 5%;
+    pointer-events: none;
 }
 
 #CardList {
@@ -366,21 +313,25 @@ body {
 }
 
 .ShowCard {
+    margin-top: 10%;
     display: flex;
-    padding: 10%;
     font-family: Ubuntu, Kanit;
     padding-inline: 15%;
+    pointer-events: none;
 }
 .StatCard {
+    margin-top: 3%;
     display: flex;
     font-family: Ubuntu, Kanit;
     padding-inline: 15%;
+    pointer-events: none;
+    padding-inline: 20px;
 }
 
 #BackToMainPage {
     position: absolute;
-    right: 10%;
-    bottom: 3%;
+    left: 5%;
+    top: 3%;
 }
 
 #BackToMainPage button {
@@ -390,10 +341,9 @@ body {
     transition: all 0.7s;
     color: #000000;
     padding-block: 3%;
-    padding-inline: 50%;
+    padding-inline: 150%;
 }
 
 #BackToMainPage button:hover {
-    content: "<";
-    padding-inline: 100%;
+    padding-inline: 200%;
 }
