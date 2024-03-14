@@ -319,6 +319,7 @@ body {
 #CardList {
     display: flex;
     position: absolute;
+    padding-inline-end: 100px;
     left: 4%;
     top: 10%;
 }
@@ -327,7 +328,8 @@ body {
     margin-top: 10%;
     display: flex;
     font-family: Ubuntu, Kanit;
-    padding-inline: 15%;
+    padding-inline: 0%;
+    padding-inline-end: 0px;
     pointer-events: none;
 }
 .StatCard {
