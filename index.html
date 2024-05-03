@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>for You</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="enterKey" id="enterKey">
+            <div class="headerText" id="enterKeyHeader">Hello, please enter key</div>
+            <span>Enter Key:</span>
+            <input type="password" id="pass">
+            <button class="submit" onclick="checkPassKey()">submit</button>
+            <input type="text" id="brr">
+        </div>
+
+        <div class="main-content" id="main-content">
+            <div class="headerText" id="headerText">Do you like me?</div>
+            <button class="choice" id="yesButton" onclick="clickedYes()">Yes</button>
+            <button class="choice" id="noButton" onclick="clickedNO(1)">Nope</button>
+        </div>
+
+        <div class="answerYes" id="answerYes">
+            <div class="headerText">I like you too :3</div>
+        </div>
+
+    </body>
+    <script src="script.js"></script>
+</html>
